@@ -134,7 +134,7 @@ static void prepare_cmds(struct mgos_pppos_data *pd) {
   pd->cmds = (char **) calloc(10, sizeof(char *));
   int n = 0;
   mg_asprintf(&pd->cmds[n++], 0, "ATH");
-  mg_asprintf(&pd->cmds[n++], 0, "ATZ");
+  mg_asprintf(&pd->cmds[n++], 0, "AT");
   mg_asprintf(&pd->cmds[n++], 0, "ATE0");
   mg_asprintf(&pd->cmds[n++], 0, "ATI");
   if (pd->cfg.apn != NULL) {
